@@ -7,7 +7,7 @@ import csv
 # SETUP
 window = Tk()
 window.geometry('520x540')
-window.title("Registration Form")
+window.title("Fitness App")
 window.configure(background='black')
 
 # METHODS
@@ -22,6 +22,8 @@ def save():
             mb.showwarning('Missing details', 'enter your weights')
         elif (repsInput.index('end') == 0):
             mb.showwarning('Missing details', 'enter your reps')
+        else:
+            mb.showinfo('Success', 'Sucesfully uploaded user data ')
     else:
         mb.showinfo("Missing details", 'enter an excercise type')
     # get from all the entries
@@ -54,7 +56,7 @@ def saveinfo():
 
 ### elements ####
 # title
-title = Label(window, text="Course Registration form", width=25, font=("sanf serif", 20, "bold"), bg='red', fg='white')
+title = Label(window, text="Exercise Form", width=25, font=("sanf serif", 20, "bold"), bg='red', fg='white')
 title.place(x=70, y=50)
 
 # DAY OF EXCERCISE
