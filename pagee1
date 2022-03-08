@@ -1,0 +1,39 @@
+from tkinter import *
+
+ws = Tk()
+ws.geometry('400x300')
+ws.title('PythonGuides')
+ws['bg'] = '#000000'
+
+f = ("Times bold", 14)
+
+
+def nextPage():
+    ws.destroy()
+    import gym
+
+
+
+
+titleLabel = Label(
+    ws,
+    text="Hello, Shariq. Select an option.",
+    padx=20,
+    pady=20,
+    bg='#000000',
+    font=("times", 20, "bold"),
+    fg = 'white',
+).pack(expand=True, fill=BOTH)
+
+
+
+Button(
+    ws,
+    text="Enter exercise",
+    font=f,
+    command=nextPage
+).pack(fill=X, expand=TRUE, side=LEFT)
+
+
+
+ws.mainloop()
